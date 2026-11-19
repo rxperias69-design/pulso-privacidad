@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ayuda · Pulso</title>
+<style>
+  :root {
+    --fondo: #ffffff;
+    --texto: #1a1d21;
+    --tenue: #5b656d;
+    --linea: #e3e7ea;
+    --acento: #0c8ea3;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fondo: #101317;
+      --texto: #e8ecee;
+      --tenue: #a4b2b8;
+      --linea: rgba(255,255,255,0.1);
+      --acento: #7df4ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 48px 16px 72px;
+    background: var(--fondo);
+    color: var(--texto);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 680px; margin: 0 auto; }
+  h1 { font-size: 28px; line-height: 1.25; margin: 0 0 8px; letter-spacing: -0.4px; }
+  h2 { font-size: 17px; margin: 32px 0 8px; letter-spacing: -0.2px; }
+  .intro { color: var(--tenue); margin: 0 0 28px; }
+  .contacto {
+    border-left: 3px solid var(--acento);
+    padding: 2px 0 2px 16px;
+    margin: 0 0 36px;
+  }
+  p { margin: 0 0 12px; }
+  a { color: var(--acento); }
+  strong { font-weight: 600; }
+  footer { border-top: 1px solid var(--linea); margin-top: 44px; padding-top: 18px; color: var(--tenue); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Ayuda con Pulso</h1>
+<p class="intro">
+  Pulso lee lo que tu iPhone y tu reloj ya guardaron en Apple Salud, te explica qué significa y te
+  arma un plan de entrenamiento. Aquí están las dudas más comunes.
+</p>
+
+<div class="contacto">
+  <p><strong>¿Algo no funciona o tienes una pregunta?</strong></p>
+  <p>Escríbeme a <a href="mailto:ric.sanchezm97@gmail.com">ric.sanchezm97@gmail.com</a>. Pulso lo
+  desarrolla una persona, así que te responde quien lo hizo.</p>
+</div>
+
+<h2>No veo mis datos, o faltan algunos</h2>
+<p>
+  Pulso solo muestra lo que Apple Salud tiene, y solo lo que le diste permiso para leer. Revísalo en
+  la app <strong>Ajustes</strong> del iPhone → <strong>Salud</strong> → <strong>Acceso a datos y
+  dispositivos</strong> → <strong>Pulso</strong>. Si un dato no existe, Pulso te dice que no hay
+  datos en vez de inventar uno.
+</p>
+
+<h2>¿Mis datos salen del teléfono?</h2>
+<p>
+  Los análisis y el plan se calculan en tu iPhone, y Pulso no tiene servidor: nada va a mí. Lo único
+  que puede salir es el chat con el entrenador, si lo activas con tu propia clave de OpenAI y aceptas
+  lo que se comparte. El detalle está en la
+  <a href="https://rxperias69-design.github.io/pulso-privacidad/">política de privacidad</a>.
+</p>
+
+<h2>¿Cuánto cuesta?</h2>
+<p>
+  Pulso es gratis. El chat con el entrenador usa tu propia clave de OpenAI, y OpenAI le cobra a tu
+  cuenta lo que consumas: una conversación normal cuesta céntimos. Sin clave, todo lo demás funciona
+  igual.
+</p>
+
+<h2>¿Cómo consigo una clave de OpenAI?</h2>
+<p>
+  En <a href="https://platform.openai.com/api-keys">platform.openai.com/api-keys</a>, con tu cuenta
+  de OpenAI: toca <em>Create new secret key</em> y cópiala. Pégala en Pulso en
+  <strong>Ajustes → Tu clave de OpenAI</strong>. A Ajustes se entra desde el ícono de arriba a la
+  derecha en la pestaña Perfil.
+</p>
+
+<h2>Mis zonas de frecuencia cardíaca no coinciden con las de Apple</h2>
+<p>
+  Pulso las calcula con el mismo método que Apple, pero si tienes las de Apple a mano puedes copiarlas
+  exactas en <strong>Ajustes → Zonas de frecuencia cardíaca</strong>. Desde ahí, todo Pulso usa las
+  tuyas.
+</p>
+
+<h2>No me deja armar un plan</h2>
+<p>
+  Si en el cuestionario de salud marcaste algo y elegiste consultarlo antes, Pulso no te propone
+  entrenamientos hasta que lo actualices. Cuando tengas el visto bueno de tu médico, cámbialo en
+  <strong>Ajustes → Cuestionario de salud</strong>.
+</p>
+
+<h2>¿Cómo borro mis datos?</h2>
+<p>
+  Todo lo que Pulso guarda vive en tu iPhone: <strong>desinstalar la app lo borra todo</strong>.
+  Antes de eso puedes borrar la conversación con el botón <strong>Borrar</strong> del chat, o quitar
+  tu clave en <strong>Ajustes → Tu clave de OpenAI</strong>. Tus datos de Apple Salud no se tocan:
+  son tuyos y de la app Salud.
+</p>
+
+<h2>¿Pulso es un dispositivo médico?</h2>
+<p>
+  No. Interpreta datos de actividad y bienestar, pero no diagnostica ni sustituye a un profesional.
+  Si sientes dolor en el pecho, mareo, falta de aire inusual o cualquier cosa que te preocupe, para de
+  entrenar y consulta a un médico.
+</p>
+
+<footer>
+  Pulso · Ricardo Sánchez · <a href="mailto:ric.sanchezm97@gmail.com">ric.sanchezm97@gmail.com</a> ·
+  <a href="https://rxperias69-design.github.io/pulso-privacidad/">Privacidad</a>
+</footer>
+
+</main>
+</body>
+</html>
