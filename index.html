@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad · Pulso</title>
+<style>
+  :root {
+    --fondo: #ffffff;
+    --texto: #1a1d21;
+    --tenue: #5b656d;
+    --linea: #e3e7ea;
+    --acento: #0c8ea3;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fondo: #101317;
+      --texto: #e8ecee;
+      --tenue: #a4b2b8;
+      --linea: rgba(255,255,255,0.1);
+      --acento: #7df4ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 48px 16px 72px;
+    background: var(--fondo);
+    color: var(--texto);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 680px; margin: 0 auto; }
+  h1 { font-size: 28px; line-height: 1.25; margin: 0 0 6px; letter-spacing: -0.4px; }
+  h2 { font-size: 18px; margin: 38px 0 10px; letter-spacing: -0.2px; }
+  .fecha { color: var(--tenue); font-size: 14px; margin: 0 0 30px; }
+  .resumen {
+    border-left: 3px solid var(--acento);
+    padding: 2px 0 2px 16px;
+    margin: 0 0 34px;
+    font-size: 17px;
+  }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 22px; }
+  li { margin-bottom: 7px; }
+  a { color: var(--acento); }
+  .nota { color: var(--tenue); font-size: 14.5px; }
+  footer { border-top: 1px solid var(--linea); margin-top: 44px; padding-top: 18px; color: var(--tenue); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Política de privacidad de Pulso</h1>
+<p class="fecha">Vigente desde el 19 de noviembre de 2026</p>
+
+<p class="resumen">
+  Pulso no recopila tus datos. Todo lo que la app lee de Apple Salud se procesa y se guarda
+  en tu iPhone, y yo —el desarrollador— no recibo nada: no hay servidor al que enviarlo.
+</p>
+
+<h2>Quién responde por esto</h2>
+<p>
+  Pulso lo desarrolla Ricardo Sánchez, como persona natural. Para cualquier duda sobre esta
+  política o sobre tus datos: <a href="mailto:ric.sanchezm97@gmail.com">ric.sanchezm97@gmail.com</a>.
+</p>
+
+<h2>Qué datos usa Pulso</h2>
+<p>
+  Con tu permiso explícito, Pulso lee de <strong>Apple Salud</strong> lo que tu iPhone y tu reloj
+  ya guardaron:
+</p>
+<ul>
+  <li>Entrenamientos: tipo, duración, distancia, calorías y la ruta GPS cuando existe.</li>
+  <li>Corazón: frecuencia cardíaca durante las sesiones, en reposo, variabilidad (HRV) y
+      frecuencia máxima.</li>
+  <li>Respiración y oxígeno: saturación (SpO₂) y frecuencia respiratoria.</li>
+  <li>Sueño: horas y fases (profundo, REM, ligero).</li>
+  <li>Cuerpo: peso, índice de masa corporal, edad y sexo.</li>
+  <li>Actividad diaria: pasos, calorías, minutos de ejercicio, pisos y tiempo de pie.</li>
+  <li>Capacidad aeróbica (VO₂máx) y métricas de movilidad.</li>
+</ul>
+<p>
+  Los permisos de Apple Salud son por tipo de dato: puedes dar unos y negar otros, y cambiarlos
+  cuando quieras desde la app Salud de iOS. Lo que no autorices, Pulso no lo lee, y donde falte
+  un dato la app te dirá que falta en vez de rellenarlo con una estimación.
+</p>
+<p>
+  Además guarda lo que tú escribes en la app: tu objetivo y nivel, los días que eliges entrenar,
+  tus respuestas al cuestionario de salud y la conversación con el entrenador.
+</p>
+
+<h2>Dónde se quedan</h2>
+<p>
+  <strong>En tu iPhone.</strong> Pulso calcula todo en el dispositivo: las zonas de frecuencia
+  cardíaca, la deriva, las tendencias, tu plan y las observaciones de cada sesión. No existe un
+  servidor de Pulso, así que no hay copia de tus datos en ningún otro lugar.
+</p>
+<p>
+  Si tu clave de OpenAI está guardada, vive en el <strong>llavero de iOS</strong>, cifrada por el
+  sistema y fuera de las copias de seguridad.
+</p>
+
+<h2>Lo único que sale del teléfono</h2>
+<p>
+  El <strong>chat con el entrenador</strong>, y solo si tú lo activas: poniendo tu propia clave de
+  OpenAI y aceptando de forma explícita lo que se comparte, que la app te muestra antes y que queda
+  registrado con fecha en tu teléfono. Puedes retirarlo quitando la clave. A partir de ahí, cada
+  mensaje viaja <em>directamente de tu iPhone a OpenAI</em>, sin pasar
+  por mí ni por ningún intermediario. Junto al mensaje se envía el contexto que la app arma para
+  que la respuesta sirva: un resumen de tu perfil, tu estado de recuperación, tu carga reciente,
+  tus últimas sesiones, tus zonas y tu plan. Son resultados ya calculados, no tus datos crudos de
+  Apple Salud.
+</p>
+<p>
+  Ese envío se rige por los términos y la política de privacidad de OpenAI, con la cuenta que sea
+  tuya. Si no pones clave, no se envía nada y el resto de Pulso funciona igual.
+</p>
+<p class="nota">
+  Al dibujar el mapa de una ruta, iOS pide los mosaicos a Apple Maps, como cualquier app con mapa.
+  Eso lo hace el sistema operativo bajo la política de privacidad de Apple; Pulso no envía tu ruta
+  a ninguna parte.
+</p>
+
+<h2>Lo que Pulso no hace</h2>
+<ul>
+  <li>No hay cuentas ni registro: no necesitas darme un correo ni una contraseña.</li>
+  <li>No hay analítica, rastreo, publicidad ni identificadores de seguimiento.</li>
+  <li>No se venden, alquilan ni comparten tus datos. No hay nadie con quien compartirlos.</li>
+  <li>No se usan tus datos para entrenar modelos.</li>
+  <li>No hay notificaciones remotas: los avisos de la app se programan en tu propio teléfono.</li>
+</ul>
+
+<h2>Cuánto duran y cómo borrarlos</h2>
+<p>
+  Lo que Pulso guarda vive en tu iPhone mientras la app esté instalada.
+  <strong>Desinstalar Pulso borra todo</strong>: el perfil, el plan, la conversación, el
+  cuestionario y la clave. Antes de eso puedes borrar la conversación desde el chat, quitar tu
+  clave desde Ajustes, o rehacer los análisis desde cero.
+</p>
+<p>
+  Los datos de Apple Salud no son de Pulso: siguen siendo tuyos y de la app Salud. Quitarle el
+  permiso a Pulso corta la lectura de inmediato.
+</p>
+
+<h2>Menores</h2>
+<p>
+  Pulso está pensado para personas adultas. El cuestionario de salud y las recomendaciones de
+  entrenamiento asumen un cuerpo adulto, y no debería usarse sin supervisión por debajo de los
+  16 años.
+</p>
+
+<h2>Salud, no diagnóstico</h2>
+<p>
+  Pulso interpreta datos de actividad y bienestar. No es un dispositivo médico, no diagnostica y
+  no sustituye a un profesional de la salud. Ante cualquier síntoma que te preocupe, consulta a
+  un médico.
+</p>
+
+<h2>Cambios</h2>
+<p>
+  Si esta política cambia, se actualiza la fecha de arriba y la versión nueva queda publicada en
+  esta misma dirección. Si algún día cambiara algo de fondo —por ejemplo, que la app empezara a
+  enviar datos a algún sitio— se avisará dentro de la app antes de que ocurra.
+</p>
+
+<footer>
+  Pulso · Ricardo Sánchez · <a href="mailto:ric.sanchezm97@gmail.com">ric.sanchezm97@gmail.com</a>
+</footer>
+
+</main>
+</body>
+</html>
